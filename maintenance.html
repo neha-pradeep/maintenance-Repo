@@ -2,96 +2,83 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Maintenance</title>
 
-  <!-- ✅ Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: "Inter", sans-serif;
-    }
-
     body {
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      /* ✅ same gradient style as your image */
-      background: linear-gradient(135deg, #4b6cb7, #1e2a4a);
+      margin: 0;
+      font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: linear-gradient(#8f9aa3, #9eabb6);
     }
 
+    .wrapper {
+      padding: 20px;
+    }
+
+    /* Card */
     .card {
-      background: #f7f7f7;
-      padding: 50px 60px;
-      border-radius: 18px;
-      text-align: center;
-      width: 420px;
-      box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
+      background: #e3e3e3;
+      padding: 30px 32px;
+      border-radius: 6px;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
     }
 
-    /* ✅ SMALL & SUBTLE ICON */
-    .icon {
-      width: 70px;        /* reduced from very large */
-      margin-bottom: 20px;
-      opacity: 0.9;
-    }
-
+    /* Heading */
     h1 {
-      font-size: 30px;
-      color: #222;
-      margin-bottom: 15px;
+      font-size: 28px;
       font-weight: 600;
+      margin: 0 0 22px;
+      color: #1f2d3d; /* dark blue-grey like screenshot */
     }
 
-    .divider {
-      width: 100%;
-      height: 1px;
-      background: #ddd;
-      margin: 20px 0;
-    }
-
-    p {
+    /* Message text */
+    .message {
       font-size: 16px;
-      color: #5f6f81;
+      color: #2f3e4e; /* slightly muted dark text */
       line-height: 1.6;
+      margin-bottom: 26px;
     }
 
-    .spacer {
-      margin-top: 20px;
+    /* Link */
+    .home-link {
+      font-size: 16px;
+      font-weight: 500;
+      color: #0a7ea4; /* teal-blue link */
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
     }
 
+    .home-link:hover {
+      text-decoration: underline;
+    }
+
+    /* Arrow styling */
+    .arrow {
+      font-size: 18px;
+    }
   </style>
 </head>
 
 <body>
 
-  <div class="card">
+  <div class="wrapper">
+    <div class="card">
 
-    <!-- ✅ smaller warning icon -->
-    <img class="icon" 
-      src="https://cdn-icons-png.flaticon.com/512/463/463612.png" 
-      alt="maintenance icon">
+      <h1>Site Under Maintenance</h1>
 
-    <h1>We'll Be Back Soon</h1>
+      <div class="message">
+        Our website is currently under maintenance.<br>
+        We're working hard to improve your experience.<br><br>
+        <h3 style="color:#0a7ea4">Please check back later.</h3>
+      </div>
 
-    <div class="divider"></div>
 
-    <p>
-      Our website is currently under maintenance.<br>
-      We're working hard to improve your experience.
-    </p>
 
-    <p class="spacer">
-      Please check back later.
-    </p>
-
+    </div>
   </div>
 
 </body>
 </html>
+``
