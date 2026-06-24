@@ -2,37 +2,26 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Service Unavailable</title>
+  <title>503 Service Unavailable</title>
 
   <style>
- body {
-  margin: 0;
-  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  background: #8f9aa3; /* light, uniform background */
-}
-
-.card {
-  background: #ffffff; /* pure white card */
-  padding: 30px 32px;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-    .wrapper {
-      padding: 20px;
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: #8f9aa3; /* same grey-blue */
     }
 
-    /* .card {
-      background: #e3e3e3;
-      padding: 30px 32px;
-      border-radius: 6px;
-      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
-    } */
+    /* Top card */
+    .card {
+      background: #f2f2f2;
+      padding: 30px 40px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
 
     h1 {
+      margin: 0 0 20px;
       font-size: 28px;
       font-weight: 600;
-      margin: 0 0 22px;
       color: #1f2d3d;
     }
 
@@ -40,14 +29,14 @@
       font-size: 16px;
       color: #2f3e4e;
       line-height: 1.6;
-      margin-bottom: 26px;
+      margin-bottom: 25px;
     }
 
     .home-link {
       font-size: 16px;
-      font-weight: 500;
       color: #0a7ea4;
       text-decoration: none;
+      font-weight: 500;
     }
 
     .home-link:hover {
@@ -58,19 +47,15 @@
 
 <body>
 
-  <div class="wrapper">
-    <div class="card">
+  <div class="card">
+    <h1>Service Unavailable</h1>
 
-      <h1>Service Unavailable</h1>
-
-      <div class="message">
-        We're temporarily unable to process your request.<br>
-        This may be due to maintenance or high traffic.<br><br>
-
-        <strong>Please try again in a few minutes.</strong>
-      </div>
-
+    <div class="message">
+      We're temporarily unable to process your request.<br>
+      This may be due to maintenance or high traffic.
     </div>
+
+    <a href="maintenance.html" class="home-link">← Return to home</a>
   </div>
 
 </body>
